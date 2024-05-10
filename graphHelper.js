@@ -113,7 +113,7 @@ async function getUserTokenAsync() {
           throw new Error('Graph client has not been initialized for user auth');
       }
   
-      return _userClient.api('/me')
+      return _userClient.api('/applicationTemplates')
           .get();
   }
   

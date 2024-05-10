@@ -18,7 +18,7 @@ async function main() {
     'Display access token',
     'List my inbox',
     'Send mail',
-    'Get User Information'
+    'list Azure AD gallery apps'
   ];
 
   while (choice != -1) {
@@ -42,8 +42,8 @@ async function main() {
         await sendMailAsync();
         break;
       case 3:
-        // Todo Lists
-        await fetchTodoLists();
+        // listADApps
+        await listADApps();
         break;
       default:
         console.log('Invalid choice! Please try again.');
@@ -123,10 +123,10 @@ function initializeGraph(settings) {
     }
   }
   
-  async function fetchTodoLists() {
+  async function listADApps() {
     try {
         const lists = await graphHelper.makeGraphCallAsync();
-        console.log('User information: ', lists);
+        console.log('list Azure AD gallery apps: ', lists);
     } catch (err) {
         console.error('Error making Graph call:', err.message);
         console.error('Error Details:', err.statusCode, err.body);

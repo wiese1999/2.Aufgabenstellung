@@ -1,7 +1,6 @@
-Funktion zeigt Informationen zum angelgenten User an.
+Funktion zeigt liste der Azure AD gallery apps
 
-
-Alle anderen probierten graph Funktionen laufen in permisson error.... siehe appSettings für alle probierten Permissionns................
+Zuz gefühlt 90 Prozebnt erhält man permisson errors.... siehe appSettings für alle probierten Permissionns................
 
 Error making Graph call: Tenant does not have a SPO license.
 Error Details: 400 {"code":"BadRequest","message":"Tenant does not have a SPO license.","innerError":{"date":"2024-05-05T09:39:36","request-id":"06ea9000-5707-4a52-a599-d93348caed5d","client-request-id":"98465061-8083-f149-cd2f-d7d0c2aa7381"}}
